@@ -1,0 +1,233 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;  /* view port height 1vh=19px */   
+    position: relative;
+}
+.navbar
+{
+    /* to display content on both side */
+    display: flex;      
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;
+}
+.logo{
+    width: 130px;
+}
+.listitem{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;   
+}
+.link:hover{
+    color: red;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.titleh1{
+    font-size: 50px;
+    margin-bottom:20px ;
+}
+#lastname{
+    color: orange;
+    font-size: 50px;
+}
+.download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.images{
+    width: 45%;
+    height: 80%;
+     position: absolute;  /*to display images on top of another */
+    right: 30px;
+    bottom: 0px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 2s;
+}
+.images:hover #shape{
+    bottom: 70px;
+
+}
+.images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 25% 8% 0px 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    color: green;
+    font-size: 20px;
+}
+.about_content{
+    margin-top: 2rem; /* 1rem=16px */
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* side by side */
+    gap: 2rem; /* gap between grids */    /* 1frame=250px */
+}  
+.about_img img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.about_details{
+    font-size: 19px;
+    font-weight: 400;
+     text-align: justify;  /* text-align: justify; to align starting and ending in the same line   */
+}
+.information{
+    margin-top: 1.5rem;
+}
+.info_box{
+    margin-bottom: 1rem;
+}
+.info_box span{
+    margin-left: 1rem;
+}
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-img img{
+    width: 90%;
+    padding-left: 4rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bar-container h3,span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.div-bar{
+    background-color: black;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.htmlbar{
+    background-color: rgb(255,217,0);
+    width: 95%;
+}
+.cssbar{
+    background-color: rgb(255,217,0);
+    width: 88%;
+}
+.reactbar{
+    background-color: rgb(255,217,0);
+    width: 89%;
+}
+.jsbar{
+    background-color: rgb(255,217,0);
+    width: 85%;
+}
+.icon-set{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;      /*vertically center*/
+    justify-content: center;  /*horizontaly center*/
+}
+.icon2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    /* border:1px solid black ; */
+    margin: 0px 5px 0px 5px;
+}
+.icon2 i{
+    color: black;
+    font-size: 30px;
+}
+.icon2:hover{
+    background-image: linear-gradient(to bottom right,yellow,red);
+}
+.icon2 :hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform:rotate(15deg);
+    }
+    20%{
+        transform:rotate(-15deg);
+    }
+    30%{
+        transform:rotate(15deg);
+    }
+    40%{
+        transform:rotate(-15deg);
+    }
+}
+footer p{
+    text-align: center;
+    font-weight: bold;
+    margin: 3rem 0px;
+}
+.arrow-up{
+display: flex;
+justify-content: center;
+align-items: center;
+float: right;
+border-radius: 50%;
+height: 50px;
+width: 50px;
+margin-right: 10px;
+margin-bottom: 50px;
+background-image: linear-gradient(to bottom right,yellow,red);
+}
+.arrow-up i{
+    color:blue;
+}
+.arrow-up :hover i{
+    color: white;
+}
